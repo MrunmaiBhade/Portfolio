@@ -1,0 +1,45 @@
+.footer {
+    background: linear-gradient(to right, #141414, #2c002e);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #c197d2;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between icons */
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.icon-container {
+    background-color: #c197d2;
+    /* Purple background */
+    border-radius: 50%;
+    padding: 10px;
+    /* Padding for the circular effect */
+    transition: background-color 0.3s ease;
+}
+
+.icon-container:hover {
+    background-color: #a56fa6;
+    /* Darker purple on hover */
+}
+
+.footer-icon {
+    width: 24px;
+    /* Smaller icon size */
+    height: 24px;
+    display: block;
+    /* Make sure it takes up the full container */
+}

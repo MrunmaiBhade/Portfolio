@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Project Page Container */
+.project-page {
+    padding: 50px;
+    background: linear-gradient(to right, #141414, #2c002e);
+    min-height: 100vh;
+    color: #ffffff;
+    position: relative;
+    /* To allow absolute positioning of spheres */
+    overflow: hidden;
+    /* Prevent spheres from overflowing */
+}
+
+/* Project Header */
+.project-header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #c197d2;
+}
+
+/* Introduction */
+.project-intro {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+/* Filters */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #1a1a1a;
+    color: #c197d2;
+    border: 2px solid #c197d2;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background-color: #c197d2;
+    color: #ffffff;
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* To make sure cards appear above spheres */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #c197d2;
+}
+
+.project-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #c197d2;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #d8a9e2;
+    transform: translateY(-5px);
+}
+
+/* Spheres */
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0.5;
+    z-index: 0;
+    /* To make spheres appear behind other elements */
+    animation: float 6s infinite ease-in-out;
+}
+
+.sphere1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 15%;
+}
+
+.sphere2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 20%;
+}
+
+.sphere3 {
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 60%;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}

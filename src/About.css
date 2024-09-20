@@ -1,0 +1,99 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Page Container */
+.about-page {
+    padding: 50px;
+    background: linear-gradient(to right, #141414, #2c002e);
+    min-height: 100vh;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Background Spheres */
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(193, 151, 210, 0.3);
+    z-index: -1;
+}
+
+.sphere1 {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 15%;
+}
+
+.sphere2 {
+    width: 300px;
+    height: 300px;
+    bottom: 20%;
+    right: 10%;
+}
+
+.sphere3 {
+    width: 500px;
+    height: 500px;
+    bottom: 15%;
+    left: 5%;
+}
+
+/* About Header */
+.about-header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #c197d2;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/* About Text */
+.about-text {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* About Image */
+.about-photo {
+    flex: 1;
+}
+
+.about-image {
+    width: 340px;
+    /* Maintain aspect ratio */
+    height: 500px;
+    /* Set the desired height */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-top: 30px;
+    }
+}
