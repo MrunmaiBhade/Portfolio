@@ -8,26 +8,22 @@
 /* Home Container */
 .home-container {
     display: flex;
-    flex-direction: column;
-    /* Stack elements vertically */
-    justify-content: center;
-    /* Center content vertically */
+    justify-content: space-between;
     align-items: center;
-    /* Center items */
     height: 100vh;
-    padding: 20px;
-    /* Padding for smaller screens */
+    padding: 50px;
     background: linear-gradient(to right, #141414, #2c002e);
+    position: relative;
+    overflow: hidden;
     color: #ffffff;
 }
 
 /* Outer Image Container */
 .outer-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    /* Space between image and text */
 }
 
 /* Image Section */
@@ -36,12 +32,8 @@
 }
 
 .main-image {
-    width: 80%;
-    /* Use percentage for responsive width */
-    max-width: 350px;
-    /* Max width for larger screens */
-    height: auto;
-    /* Maintain aspect ratio */
+    width: 350px;
+    height: 500px;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -49,57 +41,48 @@
 
 /* Content Section */
 .content-section {
-    text-align: center;
-    /* Center text for all screen sizes */
-    padding: 0 20px;
-    /* Horizontal padding */
+    flex: 1;
+    padding-left: 100px;
 }
 
 .year {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 20px;
-    /* Adjust font size */
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #c197d2;
 }
 
 .title {
-    font-size: 30px;
-    /* Adjust font size */
+    font-size: 50px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 1;
 }
 
 .intro {
-    font-size: 20px;
-    /* Adjust font size */
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
 .description {
-    font-size: 16px;
-    /* Adjust font size */
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
     line-height: 1.6;
-    max-width: 90%;
-    /* Responsive max width */
+    max-width: 400px;
     color: white;
 }
 
 /* Resume Button */
 .contact-btn {
     display: inline-block;
-    padding: 10px 20px;
-    /* Adjust padding */
+    padding: 12px 24px;
     border-radius: 25px;
     background-color: #c197d2;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    /* Adjust font size */
+    font-size: 17px;
     font-weight: 500;
     text-align: center;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -118,68 +101,25 @@
 }
 
 .circle1 {
-    width: 30%;
-    height: auto;
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
     top: 20%;
     left: 10%;
     background: radial-gradient(circle at center, #c197d2, transparent);
 }
 
 .circle2 {
-    width: 20%;
-    height: auto;
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     top: 15%;
     left: 25%;
     background: radial-gradient(circle at center, #9e72b2, transparent);
 }
 
 .circle3 {
-    width: 50%;
-    height: auto;
-    max-width: 500px;
+    width: 500px;
+    height: 500px;
     bottom: 5%;
     right: 10%;
     background: radial-gradient(circle at center, #5c285e, transparent);
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 576px) {
-    .home-container {
-        flex-direction: row;
-        /* Change back to row for larger screens */
-        padding: 50px;
-        /* Restore padding for larger screens */
-    }
-
-    .content-section {
-        text-align: left;
-        /* Align text to left for larger screens */
-    }
-
-    .year {
-        font-size: 24px;
-        /* Restore font size */
-    }
-
-    .title {
-        font-size: 50px;
-        /* Restore font size */
-    }
-
-    .intro {
-        font-size: 26px;
-        /* Restore font size */
-    }
-
-    .description {
-        font-size: 18px;
-        /* Restore font size */
-    }
-
-    .contact-btn {
-        font-size: 17px;
-        /* Restore font size */
-    }
 }
